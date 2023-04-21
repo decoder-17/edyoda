@@ -1,0 +1,65 @@
+.head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+}
+
+.brand {
+  font-size: 3em;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #0048ff;
+  margin-left: 2em;
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10em;
+}
+.greet {
+  font-size: 1.2em;
+  padding: 1em;
+}
+
+.avatar {
+  height: 2em;
+  width: auto;
+  padding: 0.5em;
+  border: 2px solid #2e3436;
+  border-radius: 10em;
+  margin: 0.5em;
+}
+
+.domain {
+  background-color: #152646;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 5em;
+}
+
+.programid {
+  margin: 0 2em 0 4em;
+}
+.programid,
+.programName {
+  font-size: 1.5em;
+  font-weight: 200;
+  font-family: "Open Sans", sans-serif;
+}
+
+.programName {
+  font-weight: bold;
+}

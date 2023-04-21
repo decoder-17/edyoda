@@ -1,0 +1,24 @@
+#root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  padding: 0.7em;
+  z-index: 2;
+  background-color: #0048ff;
+  border: 2px solid #0048ff;
+  border-radius: 10em;
+}
+
+.contact:hover {
+  cursor: pointer;
+}
