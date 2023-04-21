@@ -9,12 +9,14 @@
   font-weight: 500;
 }
 
+.certification > .card {
+  width: 80em;
+}
 .card {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  width: 80em;
   padding: 2em;
   margin: 0 2.5em;
   border: 2px solid #cceeff;
@@ -115,4 +117,15 @@
 .learning {
   margin: 0 1em;
   padding: 0 1em;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card:first-child {
+  width: 50em;
 }

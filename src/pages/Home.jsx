@@ -1,4 +1,3 @@
-import React from "react";
 import Certification from "../components/Certification";
 import "../assets/css/Home.css";
 import { Learning } from "../components/Learning";
