@@ -10,18 +10,22 @@ import Chat from "./components/Chat";
 
 function App() {
   return (
-    <>
+    <div className="app">
       <Router>
         <Header />
-        <Sidebar />
+        <div className="container">
+          <Sidebar />
+          <div className="island">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/module" element={<Module />} />
+              <Route path="/instructor" element={<Instructor />} />
+            </Routes>
+          </div>
+        </div>
         <Chat />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/module" element={<Module />} />
-          <Route path="/instructor" element={<Instructor />} />
-        </Routes>
       </Router>
-    </>
+    </div>
   );
 }
 

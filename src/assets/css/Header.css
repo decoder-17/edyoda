@@ -1,15 +1,8 @@
-.head {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 .header {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 100vw;
+  width: 100%;
 }
 
 .brand {
@@ -33,7 +26,7 @@
 }
 
 .avatar {
-  height: 2em;
+  height: 3em;
   width: auto;
   padding: 0.5em;
   border: 2px solid #2e3436;
@@ -46,8 +39,8 @@
   color: #fff;
   display: flex;
   align-items: center;
-  width: 100vw;
-  height: 5em;
+  width: 100%;
+  padding: 1.5em 0;
 }
 
 .programid {
