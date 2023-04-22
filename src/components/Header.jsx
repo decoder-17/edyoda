@@ -5,8 +5,8 @@ import avatar from "../assets/avatar.svg";
 import { AiFillCaretDown } from "react-icons/ai";
 
 export default function Header() {
-  const [programId, setProgramId] = useState("DS031221");
-  const [programName, setProgramName] = useState("Data Scientist Program");
+  const [programId, setProgramId] = useState("Program ID");
+  const [programName, setProgramName] = useState("Program Name");
 
   const location = useLocation();
   const { pathname } = location;
@@ -18,6 +18,11 @@ export default function Header() {
     setDropdown(!dropdown);
   };
 
+  const updateProgram = (id, name) => {
+    setProgramId(id);
+    setProgramName(name);
+  };
+
   return (
     <div className="head">
       <div className="header">
@@ -26,6 +31,7 @@ export default function Header() {
             href="https://www.edyoda.com/"
             target="_blank"
             className="brand-name"
+            rel="noreferrer"
           >
             Edyoda
           </a>
@@ -54,10 +60,46 @@ export default function Header() {
         <div className="dropdown">
           <div className="dropdown-heading">Select program</div>
           <div className="programs">
-            <div className="program-id">ECRD</div>
-            <div className="program-id">fsr222222</div>
-            <div className="program-id">ds261121</div>
-            <div className="program-id">ds031221</div>
+            <div
+              className={
+                programId === "ECRD" ? "program-id selected" : "program-id"
+              }
+              onClick={() => {
+                updateProgram("ECRD", "Elastic Container Registry Developer");
+              }}
+            >
+              ecrd
+            </div>
+            <div
+              className={
+                programId === "FSR222222" ? "program-id selected" : "program-id"
+              }
+              onClick={() => {
+                updateProgram("FSR222222", "Full Stack React Program");
+              }}
+            >
+              fsr222222
+            </div>
+            <div
+              className={
+                programId === "DS261121" ? "program-id selected" : "program-id"
+              }
+              onClick={() => {
+                updateProgram("DS261121", "Data Structures Program");
+              }}
+            >
+              ds261121
+            </div>
+            <div
+              className={
+                programId === "DS031221" ? "program-id selected" : "program-id"
+              }
+              onClick={() => {
+                updateProgram("DS031221", "Data Scientist Program");
+              }}
+            >
+              ds031221
+            </div>
           </div>
         </div>
       )}

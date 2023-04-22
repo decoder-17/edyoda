@@ -49,6 +49,18 @@ export const Learning = () => {
               <div className="certificate-details-heading">Today's plan</div>
               <div className="date">21 March 2022</div>
             </div>
+            <div className="right-topic">
+              Data Transformation using Pandas-3
+            </div>
+            <div className="feeback">
+              <div className="session">Daily Feedback</div>
+              <div className="session-time">opens at 07:30 PM</div>
+            </div>
+            <div className="join">
+              {" "}
+              <div className="join-btn">Join Live Session</div>{" "}
+            </div>
+            <div className="begin">begins at 0&:30 PM</div>
           </div>
         </div>
         <div className="card progress-overview">
