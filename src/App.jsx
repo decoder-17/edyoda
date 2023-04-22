@@ -7,6 +7,9 @@ import Instructor from "./pages/Instructor";
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
 import Chat from "./components/Chat";
+import Topic from "./components/Topic";
+import Assignment from "./components/Assignment";
+import Quiz from "./components/Quiz";
 
 function App() {
   return (
@@ -20,6 +23,33 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/module" element={<Module />} />
               <Route path="/instructor" element={<Instructor />} />
+              <Route
+                path="/module/topic"
+                element={
+                  <>
+                    {" "}
+                    <Module /> <Topic />
+                  </>
+                }
+              />
+              <Route
+                path="/module/assignment"
+                element={
+                  <>
+                    {" "}
+                    <Module /> <Assignment />
+                  </>
+                }
+              />
+              <Route
+                path="/module/quiz"
+                element={
+                  <>
+                    {" "}
+                    <Module /> <Quiz />
+                  </>
+                }
+              />
             </Routes>
           </div>
         </div>

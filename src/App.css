@@ -17,6 +17,7 @@
 .island {
   overflow-y: scroll;
   flex: 1;
+  background-color: #f3f6fe;
 }
 
 .contact {

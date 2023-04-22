@@ -1,11 +1,6 @@
 .sidebar {
   background-color: #152646;
-  /* position: fixed;
-  top: 9em;
-  left: 0em; */
   display: flex;
-  /* height: 50em; */
-  /* width: 8em; */
   margin: 0;
   flex-shrink: 0;
 }

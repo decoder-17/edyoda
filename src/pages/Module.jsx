@@ -1,5 +1,9 @@
-import React from "react";
-
+import Submodule from "../components/Submodule";
+import "../assets/css/Module.css"
 export default function Module() {
-  return <div>Module</div>;
+  return (
+    <div className="module">
+      <Submodule />
+    </div>
+  );
 }

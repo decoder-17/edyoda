@@ -41,10 +41,13 @@
   align-items: center;
   width: 100%;
   padding: 1.5em 0;
+  position: relative;
 }
 
 .programid {
   margin: 0 2em 0 4em;
+  display: flex;
+  align-items: center;
 }
 .programid,
 .programName {
@@ -55,4 +58,54 @@
 
 .programName {
   font-weight: bold;
+}
+
+.dropdown {
+  position: absolute;
+  background-color: #152646;
+  color: #fff;
+  padding: 1.5em 4em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.dropdown-icon:hover {
+  cursor: pointer;
+}
+
+.dropdown-heading {
+  font-size: 0.8em;
+  font-weight: 200;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  margin: 0 2.5em;
+}
+
+.programs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 20%;
+  padding: 0.5em 1em;
+}
+
+.program-id {
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  margin: 0 1em;
+  padding: 0.5em 0.5em;
+}
+
+.program-id:hover {
+  cursor: pointer;
+}
+
+.program-id:last-child {
+  background-color: #fff;
+  color: black;
+  border: 2px solid #fff;
+  border-radius: 0.5em;
 }
