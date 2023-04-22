@@ -1,0 +1,111 @@
+.submodule-topic {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2em;
+  margin: 3em;
+}
+
+.submodule-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.submodule-head {
+  display: flex;
+  flex-direction: column;
+
+  padding: 1em 0;
+}
+
+.heading {
+  font-size: 2em;
+  font-weight: 500;
+  margin: 0.5em 0;
+}
+
+.submodule-head > .date {
+  font-size: 1.2em;
+  font-weight: 200;
+  margin: 0.5em 0;
+}
+
+.submodule-head-right {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.submodule-head-right > .param {
+  margin: 0;
+  padding: 0 1em;
+}
+
+.submodule-head-right > .param > .param-head {
+  display: flex;
+  justify-content: end;
+}
+
+.submodule-subheading {
+  font-weight: 400;
+  font-size: 1.4em;
+  margin: 0.5em 0;
+}
+
+.card {
+  margin: 1em 0;
+}
+
+.card-right,
+.card-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-right {
+  border-right: 1px solid #cad3e0;
+}
+
+.param,
+.moment {
+  padding: 0.5em 3em;
+}
+
+.param-head {
+  font-size: 1.5em;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  padding: 0.5em 0;
+}
+
+.param-sub {
+  font-size: 1em;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+}
+
+.moment-head {
+  font-size: 1.3em;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  padding: 0.5em 0;
+  margin: 0 0.7em;
+}
+
+.day,
+.time {
+  font-family: "Roboto", sans-serif;
+  padding: 0.5em 0;
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+  font-weight: 200;
+}
+
+.icon {
+  height: 1.5em;
+  padding: 0 1em;
+}
