@@ -6,11 +6,15 @@
 }
 
 .brand {
-  font-size: 3em;
+  font-size: 2em;
   font-weight: 900;
   text-transform: uppercase;
-  color: #0048ff;
   margin-left: 2em;
+}
+
+.brand-name {
+  color: #0048ff;
+  margin-left: 1em;
 }
 
 .profile {
@@ -26,7 +30,7 @@
 }
 
 .avatar {
-  height: 3em;
+  height: 2.5em;
   width: auto;
   padding: 0.5em;
   border: 2px solid #2e3436;

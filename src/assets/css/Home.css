@@ -4,7 +4,7 @@
 }
 
 .title {
-  margin: 1em;
+  margin: 0.8em 1em;
   font-size: 2.5em;
   font-weight: 500;
 }
@@ -48,7 +48,7 @@
 .certificate-details-heading {
   text-transform: uppercase;
   flex-wrap: wrap;
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: 500;
   padding: 0.3em;
 }
@@ -83,6 +83,8 @@
 .round {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   font-family: "Open Sans", sans-serif;
   width: 100%;
   padding: 0 0.5em;
@@ -127,6 +129,98 @@
   align-items: center;
 }
 
+.module-details {
+  display: flex;
+  justify-content: center;
+}
 .card:first-child {
-  width: 50em;
+  align-items: center;
+  width: 40em;
+}
+
+.card-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25em;
+}
+
+.card-instructor-details {
+  display: flex;
+  align-items: center;
+  color: #65bffe;
+  font-weight: 600;
+}
+
+.course-details {
+  text-transform: capitalize;
+  width: 20em;
+}
+
+.cohorts {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5em;
+  font-size: 0.8em;
+}
+
+.progress {
+  color: #65bffe;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: "Open Sans", sans-serif;
+}
+
+.bar {
+  background-color: #abe0fe;
+  border: 5px solid #abe0fe;
+  border-radius: 0.5em;
+  width: 16em;
+  margin: 0 0.5em;
+}
+
+.progress-overview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mini-cards {
+  border: 2px solid #65bffe;
+  border-radius: 0.5em;
+  height: 1.5em;
+  width: 16em;
+  padding: 2em;
+  margin: 0.7em 0;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* border-bottom: 2px solid #b4b4b4; */
+}
+
+.progress-percent {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.progress-topic {
+  text-transform: capitalize;
+  color: #b4b4b4;
+}
+
+.view-details {
+  text-transform: uppercase;
+  color: #65bffe;
+  font-weight: 900;
+  font-size: 1em;
+  cursor: pointer;
+  align-self: flex-start;
+  padding: 0;
+  margin: 0;
 }

@@ -1,22 +1,19 @@
 .module {
-  position: relative;
   display: flex;
 }
 
 .submodule {
   padding: 1em;
-  position: absolute;
   background-color: #e0e6f2;
-  height: auto;
   width: 10em;
-  height: 51.5em;
+  height: calc(100vh - 8.5em);
 }
 
 .submodule-option {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  height: 10em;
+  justify-content: center;
+  align-items: center;
 }
 
 .submodule-menu {
@@ -24,5 +21,5 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 10em;
+  height: 5em;
 }

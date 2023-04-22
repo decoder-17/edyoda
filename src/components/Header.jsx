@@ -21,7 +21,15 @@ export default function Header() {
   return (
     <div className="head">
       <div className="header">
-        <div className="brand">Edyoda</div>
+        <div className="brand">
+          <a
+            href="https://www.edyoda.com/"
+            target="_blank"
+            className="brand-name"
+          >
+            Edyoda
+          </a>
+        </div>
         <div className="profile">
           <div className="greet">Hi Test Learner!</div>
           <img src={avatar} alt="avatar" className="avatar" />

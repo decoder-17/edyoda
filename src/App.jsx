@@ -10,6 +10,7 @@ import Chat from "./components/Chat";
 import Topic from "./components/Topic";
 import Assignment from "./components/Assignment";
 import Quiz from "./components/Quiz";
+import Error from "./pages/Error";
 
 function App() {
   return (
@@ -50,6 +51,7 @@ function App() {
                   </>
                 }
               />
+              <Route path="*" element={<Error />} />
             </Routes>
           </div>
         </div>
