@@ -66,8 +66,7 @@
   list-style: none;
   justify-content: space-between;
   align-items: center;
-  padding: 1em;
-  margin: 1em;
+  padding: 0.5em;
 }
 
 .card-header {
@@ -142,7 +141,7 @@
 .topic-card {
   display: flex;
   flex-direction: column;
-  padding: 2em;
+  padding: 2em 4em;
   border: 2px solid #cceeff;
   border-radius: 0.3em;
   box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.4);
@@ -154,14 +153,30 @@
   box-shadow: none;
 }
 
+.topic-card-header {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  padding: 0 2em;
+  margin: 0 2em;
+  justify-content: space-around;
+  font-weight: 700;
+  height: 2em;
+  width: 17em;
+}
+
+.topic-selected {
+  position: relative;
+  height: 1rem;
+  background-color: #fffefe;
+  height: 2em;
+  width: 17em;
+}
+
 .sub-topic {
   font-size: 1em;
   font-weight: 500;
   padding: 2em 0;
-}
-
-.subtopics {
-  display: flex;
 }
 
 .submodule-subtopics {
@@ -169,4 +184,8 @@
   padding: 0.2em 0;
   margin-left: 1em;
   font-family: "Roboto", sans-serif;
+}
+
+.submodule-icon {
+  background: none;
 }

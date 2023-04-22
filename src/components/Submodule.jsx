@@ -1,4 +1,6 @@
 import activetopic from "../assets/activeTopic.svg";
+import activequiz from "../assets/activeModuleQuiz.svg";
+import activeassignment from "../assets/activeAssignment.svg";
 import topic from "../assets/topic.svg";
 import quiz from "../assets/moduleQuiz.svg";
 import assignment from "../assets/assignment.svg";
@@ -21,10 +23,13 @@ export default function Submodule() {
                 : "submodule-menu"
             }
           >
-            <div className="submodule-icon">
+            <span className="submodule-icon">
               {" "}
-              <img src={topic} alt="topic" />{" "}
-            </div>
+              <img
+                src={splitLocation[2] === "topic" ? activetopic : topic}
+                alt="topic"
+              />{" "}
+            </span>
             <div className="menu-heading">Python Loops</div>
           </div>
         </Link>
@@ -36,9 +41,12 @@ export default function Submodule() {
                 : "submodule-menu"
             }
           >
-            <div className="icon">
-              <img src={quiz} alt="quiz" />
-            </div>
+            <span className="submodule-icon">
+              <img
+                src={splitLocation[2] === "quiz" ? activequiz : quiz}
+                alt="quiz"
+              />
+            </span>
             <div className="menu-heading">Quiz-1: Data Types</div>
           </div>
         </Link>
@@ -50,14 +58,22 @@ export default function Submodule() {
                 : "submodule-menu"
             }
           >
-            <div className="icon">
-              <img src={assignment} alt="assignment" />
+            <span className="submodule-icon ">
+              <img
+                src={
+                  splitLocation[2] === "assignment"
+                    ? activeassignment
+                    : assignment
+                }
+                alt="assignment"
+              />
+            </span>
+            <div className="menu-heading">
+              Assignment-1: <br /> Operators | Loops
             </div>
-            <div className="menu-heading">Assignment-1: Operators | Loops</div>
           </div>
         </Link>
       </div>
-      
     </div>
   );
 }

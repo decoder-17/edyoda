@@ -15,7 +15,9 @@ export default function Sidebar() {
           <li className={splitLocation[1] === "" ? "active route" : "route"}>
             <div className="icon">
               {" "}
-              <FaHome size={40} />{" "}
+              <span>
+                <FaHome size={40} />
+              </span>{" "}
             </div>
             <div className="routename">Home</div>
           </li>
@@ -25,7 +27,9 @@ export default function Sidebar() {
             className={splitLocation[1] === "module" ? "active route" : "route"}
           >
             <div className="icon">
-              <GoFileSubmodule size={40} />
+              <span>
+                <GoFileSubmodule size={40} />
+              </span>
             </div>
             <div className="routename">Module</div>
           </li>
@@ -37,7 +41,9 @@ export default function Sidebar() {
             }
           >
             <div className="icon">
-              <BiSupport size={40} />
+              <span>
+                <BiSupport size={40} />
+              </span>
             </div>
             <div className="routename">Instructors</div>
           </li>

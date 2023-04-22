@@ -1,7 +1,7 @@
 import Submodule from "../components/Submodule";
 import "../assets/css/Module.css";
 import "../assets/css/Submodule.css";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 export default function Module() {
   const location = useLocation();

@@ -21,6 +21,7 @@ export default function Header() {
   const updateProgram = (id, name) => {
     setProgramId(id);
     setProgramName(name);
+    setDropdown(!dropdown);
   };
 
   return (
@@ -38,7 +39,9 @@ export default function Header() {
         </div>
         <div className="profile">
           <div className="greet">Hi Test Learner!</div>
-          <img src={avatar} alt="avatar" className="avatar" />
+          <span>
+            <img src={avatar} alt="avatar" className="avatar" />
+          </span>
         </div>
       </div>
       {splitLocation[1] === "" ? (

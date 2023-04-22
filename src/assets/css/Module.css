@@ -3,7 +3,6 @@
 }
 
 .submodule {
-  padding: 1em;
   background-color: #e0e6f2;
   width: 15em;
   height: calc(100vh - 8.5em);
@@ -12,7 +11,8 @@
 .submodule-option {
   display: flex;
   flex-direction: column;
-  padding: 0.5em 1em;
+  text-align: center;
+  margin: 0.5em 0;
 }
 
 .submodule-menu {
@@ -29,4 +29,5 @@
 .active.submodule-menu {
   background-color: #cad3e0;
   color: white;
+  margin: 0;
 }

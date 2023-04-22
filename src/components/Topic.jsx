@@ -15,19 +15,19 @@ export default function Topic() {
       <div className="submodule-feedback">daily feedback</div>
       <div className="submodule-container">
         <ul className="topic-card-heading">
-          <li className="card-header">
+          <li className="topic-card-header topic-selected">
             <img src={info} alt="info" className="icon" />
             session plan
           </li>
-          <li className="card-header">
+          <li className="topic-card-header">
             <img src={play} alt="play" className="icon" />
             pre-watch videos
           </li>
-          <li className="card-header">
+          <li className="topic-card-header">
             <img src={video} alt="video" className="icon" />
             session recording
           </li>
-          <li className="card-header">
+          <li className="topic-card-header">
             {/* <img src={reference} alt="reference" className="icon" /> */}
             references
           </li>
