@@ -18,7 +18,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0.8em;
+  padding: 1em;
   text-transform: uppercase;
   font-size: 0.8em;
   height: 6em;
@@ -44,5 +44,6 @@
   background-color: #e0e6f2;
   color: #152646;
   margin: 0;
+  /* padding: 0 2em; */
 
 }

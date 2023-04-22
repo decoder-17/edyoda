@@ -5,7 +5,7 @@ import info from "../assets/info.svg";
 import reference from "../assets/document.svg";
 import { useState } from "react";
 export default function Topic() {
-  const [selectedTopic, setSelectedTopic] = useState("");
+  const [selectedTopic, setSelectedTopic] = useState("session plan");
 
   const updateSelectedTopic = (topic) => {
     setSelectedTopic(topic);

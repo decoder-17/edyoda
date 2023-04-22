@@ -64,8 +64,8 @@
 
 .topic-card-heading {
   display: flex;
+  justify-content: space-between;
   list-style: none;
-  gap: 2em;
   align-items: center;
   padding-top: 0.5em;
 }
@@ -139,9 +139,6 @@
   margin: 1em 1em;
 }
 
-.submodule-container {
-}
-
 .topic-card {
   display: flex;
   flex-direction: column;
@@ -162,10 +159,10 @@
   display: flex;
   align-items: center;
   text-transform: uppercase;
-  justify-content: space-evenly;
+  justify-content: center;
   font-weight: 700;
   order: 1;
-
+  flex-basis: 25%;
   padding: 1em 2em;
 }
 
