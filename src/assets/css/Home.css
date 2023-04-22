@@ -9,18 +9,14 @@
   font-weight: 500;
 }
 
-.certification > .card {
-  width: 80vw;
-}
 .card {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  padding: 2em;
-  margin: 0 2.5em;
+  padding: 1.5em;
   border: 2px solid #cceeff;
-  border-radius: 0.5em;
+  border-radius: 0.3em;
   box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.4);
   background-color: #fffefe;
   transition: all 500ms ease;
@@ -30,12 +26,15 @@
   box-shadow: none;
 }
 
+.certification > .card {
+  margin-left: 2.5em;
+}
+
 .certificate-details {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 20vw;
 }
 .certificate-details-header {
   text-align: center;
@@ -52,7 +51,6 @@
 
 .certificate-details-heading {
   text-transform: uppercase;
-  flex-wrap: wrap;
   font-size: 1.2em;
   font-weight: 500;
   padding: 0.3em;
@@ -76,7 +74,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 15em;
 }
 
 .exam-heading {
@@ -121,6 +118,10 @@
   cursor: pointer;
 }
 
+.title.title-learning {
+  margin-bottom: 0.25em;
+}
+
 .learning {
   margin: 0 1em;
   padding: 0 1em;
@@ -129,21 +130,26 @@
 .cards {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
+  gap: 2em;
+}
+
+.card.left-card {
+  padding: 0;
+  margin-top: 1em;
+  margin-left: 2.5em;
 }
 
 .left {
-  border-right: 2px solid #65bffe;
+  padding: 1.5em;
 }
 
 .module-details {
   display: flex;
   justify-content: center;
+  /* margin: 0.5em; */
 }
 .card:first-child {
   align-items: center;
-  width: 40em;
 }
 
 .card-heading {
@@ -162,7 +168,6 @@
 
 .course-details {
   text-transform: capitalize;
-  width: 20em;
 }
 
 .cohorts {
@@ -186,24 +191,111 @@
   background-color: #abe0fe;
   border: 5px solid #abe0fe;
   border-radius: 0.5em;
-  width: 16em;
+  width: 17em;
   margin: 0 0.5em;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5em;
+  position: relative;
+}
+
+.right::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  top: 0;
+  left: -2em;
+  bottom: 0;
+  background-color: #65bffe;
+}
+
+.right-head {
+  text-transform: none;
+  margin: 2em 0;
+}
+
+.right-heading {
+  text-transform: capitalize;
+  font-size: 1.2em;
+  font-weight: 500;
+  margin: 0.5em 0;
+}
+
+.date {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8em;
+  font-weight: 100;
+}
+
+.right-topic {
+  color: #0093ff;
+  font-weight: 500;
+  font-size: 1.2em;
+  margin: 0 0 1em 0;
+}
+
+.feedback {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.session {
+  color: #bfc4cc;
+}
+
+.join-btn {
+  display: inline-flex;
+  align-content: center;
+  background-color: #efefef;
+  border: 2px solid #efefef;
+  border-radius: 2em;
+  padding: 1em;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: 700;
+}
+
+.session-time {
+  font-style: italic;
+  font-family: "Open Sans", sans-serif;
+  color: #65bffe;
+  font-size: 0.8em;
+}
+
+.begin {
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.7em;
+  margin: 1em;
+  color: #c4c6ca;
 }
 
 .progress-overview {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin-top: 2.1em;
 }
 
+.progress-heading {
+  align-self: flex-start;
+  text-transform: capitalize;
+  font-size: 1.2em;
+  font-weight: 500;
+  padding: 0.3em;
+}
 .mini-cards {
   border: 2px solid #65bffe;
   border-radius: 0.5em;
-  height: 1.5em;
   width: 16em;
-  padding: 2em;
-  margin: 0.7em 0;
+  padding: 1.5em;
+  margin: 1em 0em;
   font-family: "Open Sans", sans-serif;
   display: flex;
   flex-direction: row;
@@ -224,11 +316,9 @@
 
 .view-details {
   text-transform: uppercase;
-  color: #65bffe;
+  color: #0093ff;
   font-weight: 900;
   font-size: 1em;
   cursor: pointer;
-  align-self: flex-start;
-  padding: 0;
-  margin: 0;
+  justify-content: flex-end;
 }

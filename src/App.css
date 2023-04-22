@@ -24,6 +24,7 @@ body {
   overflow-y: scroll;
   flex: 1;
   background-color: #f3f6fe;
+  /* padding: 2em 0; */
 }
 
 .contact {
