@@ -37,22 +37,22 @@ export default function Assignment() {
           <div className="moment">
             <div className="moment-head">Start:</div>
             <div className="day">
-              <img src={calendar} alt="calendar" className="icon" />
+              <img src={calendar} alt="calendar" className="card-icon" />
               20 December 2021
             </div>
             <div className="time">
-              <img src={clock} alt="clock" className="icon" />
+              <img src={clock} alt="clock" className="card-icon" />
               07:30 PM
             </div>
           </div>
           <div className="moment">
             <div className="moment-head">Due:</div>
             <div className="day">
-              <img src={calendar} alt="calendar" className="icon" />
+              <img src={calendar} alt="calendar" className="card-icon" />
               26 December 2021
             </div>
             <div className="time">
-              <img src={clock} alt="clock" className="icon" />
+              <img src={clock} alt="clock" className="card-icon" />
               11:59 PM
             </div>
           </div>
