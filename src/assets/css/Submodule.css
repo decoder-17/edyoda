@@ -1,4 +1,5 @@
 .submodule-topic {
+  flex: 1;
   display: flex;
   flex-direction: column;
   padding: 0 2em;
@@ -64,9 +65,9 @@
 .topic-card-heading {
   display: flex;
   list-style: none;
-  justify-content: space-between;
+  gap: 2em;
   align-items: center;
-  padding: 0.5em;
+  padding-top: 0.5em;
 }
 
 .card-header {
@@ -138,13 +139,17 @@
   margin: 1em 1em;
 }
 
+.submodule-container {
+}
+
 .topic-card {
   display: flex;
   flex-direction: column;
+  width: 100%;
   padding: 2em 4em;
   border: 2px solid #cceeff;
-  border-radius: 0.3em;
-  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.4);
+  border-radius: 0 6px 6px 6px;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.4);
   background-color: #fffefe;
   transition: all 500ms ease;
 }
@@ -157,20 +162,33 @@
   display: flex;
   align-items: center;
   text-transform: uppercase;
-  padding: 0 2em;
-  margin: 0 2em;
-  justify-content: space-around;
+  justify-content: space-evenly;
   font-weight: 700;
-  height: 2em;
-  width: 17em;
+  order: 1;
+
+  padding: 1em 2em;
 }
 
-.topic-selected {
+.topic-card-header.topic-selected {
+  background-color: white;
+  border: 2px solid #cceeff;
+  border-radius: 6px 6px 0 0;
+  border-bottom: 2px solid white;
   position: relative;
-  height: 1rem;
-  background-color: #fffefe;
-  height: 2em;
-  width: 17em;
+}
+
+.topic-card-header.topic-selected::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  background: white;
+}
+
+.topic-card-header:hover {
+  cursor: pointer;
 }
 
 .sub-topic {

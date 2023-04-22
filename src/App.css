@@ -40,10 +40,12 @@ body {
   background-color: #0048ff;
   border: 2px solid #0048ff;
   border-radius: 10em;
+  transition: all 200ms ease;
 }
 
 .contact:hover {
   cursor: pointer;
+  transform: scale(1.1, 1.1);
 }
 
 .error {

@@ -2,8 +2,13 @@ import { IoIosChatboxes } from "react-icons/io";
 
 export default function Chat() {
   return (
-    <div className="contact">
+    <a
+      href="https://www.edyoda.com/"
+      className="contact"
+      target="_blank"
+      rel="noreferrer"
+    >
       <IoIosChatboxes className="chat" size={36} color="white" />
-    </div>
+    </a>
   );
 }
