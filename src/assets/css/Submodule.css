@@ -55,11 +55,13 @@
 }
 
 .submodule-feedback {
+  text-transform: uppercase;
+  color: #0093ff;
+  font-weight: 900;
+  font-size: 1em;
+  cursor: pointer;
   display: flex;
   justify-content: flex-end;
-  text-transform: uppercase;
-  font-weight: 600;
-  color: #0197ff;
 }
 
 .topic-card-heading {

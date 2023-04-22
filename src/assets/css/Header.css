@@ -13,7 +13,12 @@
 }
 
 .brand-name {
-  color: #0048ff;
+  color: rgb(0, 72, 255);
+  color: linear-gradient(
+    270deg,
+    rgba(0, 72, 255, 1) 0%,
+    rgba(0, 150, 255, 1) 100%
+  );
   margin-left: 1em;
 }
 
