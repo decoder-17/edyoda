@@ -24,7 +24,8 @@
   margin: 0.5em 0;
 }
 
-.submodule-head > .date {
+.submodule-head > .date,
+.topic-card > .date {
   font-size: 1.2em;
   font-weight: 200;
   margin: 0.5em 0;
@@ -136,4 +137,36 @@
 
 .module > .heading {
   margin: 1em 1em;
+}
+
+.topic-card {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  border: 2px solid #cceeff;
+  border-radius: 0.3em;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.4);
+  background-color: #fffefe;
+  transition: all 500ms ease;
+}
+
+.topic-card:hover {
+  box-shadow: none;
+}
+
+.sub-topic {
+  font-size: 1em;
+  font-weight: 500;
+  padding: 2em 0;
+}
+
+.subtopics {
+  display: flex;
+}
+
+.submodule-subtopics {
+  font-style: 0.8em;
+  padding: 0.2em 0;
+  margin-left: 1em;
+  font-family: "Roboto", sans-serif;
 }

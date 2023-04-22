@@ -32,7 +32,27 @@ export default function Topic() {
             references
           </li>
         </ul>
-        <div className="topic-card"></div>
+        <div className="topic-card">
+          <div className="heading">Session Plan</div>
+          <div className="date">
+            LIVE session is about to start. Please stay tuned.
+          </div>
+          <div className="join">
+            {" "}
+            <div className="join-btn">Join Live Session</div>{" "}
+          </div>
+          <div className="sub-topic">Sub-Topics</div>
+          <ol>
+            <li className="submodule-subtopics">
+              Sorting and Indexing Dataframe
+            </li>
+            <li className="submodule-subtopics">Filtering Dataframe</li>
+            <li className="submodule-subtopics">
+              Usage of loc and iloc functions
+            </li>
+          </ol>
+          <div className="sub-topic">Session Details</div>
+        </div>
       </div>
     </div>
   );

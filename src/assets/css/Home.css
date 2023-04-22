@@ -262,6 +262,12 @@
   font-weight: 700;
 }
 
+.join-btn:hover {
+  cursor: pointer;
+  background-color: black;
+  color: #efefef;
+}
+
 .session-time {
   font-style: italic;
   font-family: "Open Sans", sans-serif;
