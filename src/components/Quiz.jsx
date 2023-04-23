@@ -42,7 +42,7 @@ export default function Quiz() {
             <div className="moment-head">Start:</div>
             <div className="day">
               <img src={calendar} alt="calendar" className="card-icon" />
-              16 December 2021
+              16 Dec 2021
             </div>
             <div className="time">
               <img src={clock} alt="clock" className="card-icon" />
@@ -53,7 +53,7 @@ export default function Quiz() {
             <div className="moment-head">Due:</div>
             <div className="day">
               <img src={calendar} alt="calendar" className="card-icon" />
-              19 December 2021
+              19 Dec 2021
             </div>
             <div className="time">
               <img src={clock} alt="clock" className="card-icon" />

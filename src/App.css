@@ -6,7 +6,7 @@
 
 html,
 body {
-  min-height: 100vh;
+  min-height: 100%;
 }
 
 .app {
@@ -21,7 +21,7 @@ body {
 
 .island {
   display: flex;
-  overflow-y: scroll;
+  overflow-y: auto;
   flex: 1;
   background-color: #f3f6fe;
 }
