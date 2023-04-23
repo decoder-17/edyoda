@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import "../assets/css/Header.css";
 import avatar from "../assets/avatar.svg";
-import { AiFillCaretDown } from "react-icons/ai";
+import { AiFillCaretDown, AiFillCaretUp } from "react-icons/ai";
 
 export default function Header() {
   const [programId, setProgramId] = useState("Program ID");
@@ -48,7 +48,14 @@ export default function Header() {
         <div className="domain">
           <div className="programid">
             {programId}{" "}
-            <AiFillCaretDown onClick={showDropdown} className="dropdown-icon" />
+            {dropdown ? (
+              <AiFillCaretUp onClick={showDropdown} className="dropdown-icon" />
+            ) : (
+              <AiFillCaretDown
+                onClick={showDropdown}
+                className="dropdown-icon"
+              />
+            )}
           </div>
 
           <div className="programName">{programName}</div>
